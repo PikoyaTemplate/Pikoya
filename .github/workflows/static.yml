@@ -22,7 +22,23 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build release ZIP
+        run: |
+          mkdir release
+          cp index.html app.js style.css README.md LICENSE.txt release/
+          cd release
+          zip -r ../Pikoya-Digital-Services-Marketplace-Template.zip .
+      - name: Upload release ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pikoya-Digital-Services-Marketplace-Template
+          path: Pikoya-Digital-Services-Marketplace-Template.zip
+
   deploy:
     environment:
       name: github-pages
