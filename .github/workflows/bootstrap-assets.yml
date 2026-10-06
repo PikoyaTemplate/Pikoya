@@ -9,7 +9,6 @@ permissions:
 
 jobs:
   assets:
-    if: ${{ !hashFiles('premium.png') || !hashFiles('stars.png') || !hashFiles('stars-banner.png') || !hashFiles('boost.png') || !hashFiles('file_000000008618821089451802e626503f.png') || !hashFiles('file_00000000d7748210b66c82b92714eed8.png') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,10 +23,11 @@ jobs:
           curl -L --fail "$base/boost.png" -o boost.png
           curl -L --fail "$base/file_000000008618821089451802e626503f.png" -o file_000000008618821089451802e626503f.png
           curl -L --fail "$base/file_00000000d7748210b66c82b92714eed8.png" -o file_00000000d7748210b66c82b92714eed8.png
-      - name: Commit bundled assets
+      - name: Commit bundled assets if needed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add premium.png stars.png stars-banner.png boost.png file_000000008618821089451802e626503f.png file_00000000d7748210b66c82b92714eed8.png
-          git commit -m "Bundle Pikoya visual assets" || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "Bundle Pikoya visual assets"
           git push
