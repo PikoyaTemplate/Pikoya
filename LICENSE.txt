@@ -1,0 +1,19 @@
+PIKOYA TEMPLATE — LICENSE
+
+Copyright (c) 2026
+
+This template is licensed for use by the purchaser under the terms of the marketplace or sales agreement through which it was purchased.
+
+The purchaser may:
+- modify the source code;
+- use the template in commercial client or personal projects;
+- deploy customized versions as finished websites or services.
+
+The purchaser may not:
+- redistribute or resell the original template source as a standalone template;
+- sublicense or give the source files to third parties as a competing template product;
+- claim third-party libraries, assets, or data as their own.
+
+Third-party libraries, assets, fonts, images, data sources, and trademarks remain subject to their own licenses and terms.
+
+If the marketplace providing this product supplies a mandatory license, that marketplace license takes precedence over this file where applicable.
