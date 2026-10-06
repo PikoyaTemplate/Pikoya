@@ -11,7 +11,7 @@ https://pikoyatemplate.github.io/Pikoya/
 - Responsive vintage/editorial storefront
 - Homepage hero and service collection
 - Subscription, Credits, Boosts and Digital Goods service flows
-- Plan selection and custom quantities
+- Plan selection and quantities
 - Customer ID / username and order-note fields
 - Shopping cart with totals and item removal
 - Demo checkout and order-status flow
@@ -20,14 +20,15 @@ https://pikoyatemplate.github.io/Pikoya/
 - FAQ sections
 - Clean HTML, CSS and JavaScript structure
 - GitHub Pages-ready static deployment
-- No build tool or framework required
+- No build tool or JavaScript framework required
 
 ## Files
 
 - `index.html` — main page shell, navigation, FAQ and footer
 - `style.css` — visual styling and responsive layout
-- `app.js` — storefront routing, services, cart, favorites and order interactions
-- `*.png` — original project artwork retained in the repository when applicable
+- `app.js` — storefront routing, service data, cart, favorites and order interactions
+- `README.md` — documentation
+- `LICENSE.txt` — purchase/license terms
 
 ## Installation
 
@@ -43,7 +44,7 @@ Edit service names, plans and prices in `app.js`.
 Edit colors, typography and layout in `style.css`.
 Edit global copy, FAQ and footer content in `index.html`.
 
-The template is intentionally generic so buyers can adapt it to many kinds of digital businesses without being tied to a specific platform, brand or supplier.
+The template is intentionally platform-neutral so buyers can adapt it to many kinds of digital businesses without being tied to a specific service, brand or supplier.
 
 ## Production Notes
 
@@ -55,7 +56,7 @@ Cart, favorites and demo orders use browser local storage.
 
 The storefront does not require a JavaScript framework or npm packages.
 
-The Google Fonts import in `style.css` is an external font resource. If you redistribute the template through a marketplace, review the font provider's current terms and marketplace requirements.
+The Google Fonts import in `style.css` is an external font resource. Review the font provider's current terms and your marketplace's requirements before redistributing or bundling fonts.
 
 ## Browser Support
 
