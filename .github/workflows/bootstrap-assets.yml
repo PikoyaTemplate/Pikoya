@@ -1,0 +1,33 @@
+name: Bootstrap image assets
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: write
+
+jobs:
+  assets:
+    if: ${{ !hashFiles('premium.png') || !hashFiles('stars.png') || !hashFiles('stars-banner.png') || !hashFiles('boost.png') || !hashFiles('file_000000008618821089451802e626503f.png') || !hashFiles('file_00000000d7748210b66c82b92714eed8.png') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download bundled visual assets
+        run: |
+          set -e
+          base="https://raw.githubusercontent.com/mobinalayani84-collab/Pikoya/main"
+          curl -L --fail "$base/premium.png" -o premium.png
+          curl -L --fail "$base/stars.png" -o stars.png
+          curl -L --fail "$base/stars-banner.png" -o stars-banner.png
+          curl -L --fail "$base/boost.png" -o boost.png
+          curl -L --fail "$base/file_000000008618821089451802e626503f.png" -o file_000000008618821089451802e626503f.png
+          curl -L --fail "$base/file_00000000d7748210b66c82b92714eed8.png" -o file_00000000d7748210b66c82b92714eed8.png
+      - name: Commit bundled assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add premium.png stars.png stars-banner.png boost.png file_000000008618821089451802e626503f.png file_00000000d7748210b66c82b92714eed8.png
+          git commit -m "Bundle Pikoya visual assets" || exit 0
+          git push
