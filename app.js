@@ -9,7 +9,6 @@ const NFT_BASE="https://raw.githubusercontent.com/ssamy2/TelegramGiftsAssests/ma
 const BACKDROP_SOURCE="https://cdn.jsdelivr.net/gh/ssamy2/TelegramGiftsAssests@main/backdrops/";
 const MODEL_ASSET_BASE="https://raw.githubusercontent.com/ssamy2/TelegramGiftsAssests/main/models/";
 const TON_TO_USD=1.54;
-const USD_TO_TOMAN=268800;
 const NFT_COST_BUFFER=0.03;
 const NFT_PROFIT=0.10;
 let nftSourcePromise=null;
@@ -23,7 +22,7 @@ function tonMoney(n){return Number(n||0).toLocaleString("en-US",{maximumFraction
 function money(n){return Number(n||0).toLocaleString("en-US")+" USD"}
 function numericPrice(text){const n=Number(String(text||"").replace(/[^0-9.]/g,""));return Number.isFinite(n)?n:0}
 function starsPriceUsd(n){n=Number(n||0);if(n<=0)return 0;if(n<=50)return n*0.99/50;if(n<=100)return 0.99+(n-50)*(1.89-0.99)/50;if(n<=150)return 1.89+(n-100)*(2.79-1.89)/50;if(n<=200)return 2.79+(n-150)*(3.69-2.79)/50;return 3.69+(n-200)*(4.59-3.69)/50}
-function cartItemTotalUsd(x){if(Number.isFinite(Number(x.totalUsd)))return Number(x.totalUsd);if(Number.isFinite(Number(x.totalToman)))return Number(x.totalToman)/USD_TO_TOMAN;if(x.currency==="TON"&&Number.isFinite(Number(x.total)))return nftSellUsd(Number(x.total));if(Number.isFinite(Number(x.total)))return Number(x.total);return numericPrice(x.price)*Number(x.quantity||1)}
+function cartItemTotalUsd(x){if(Number.isFinite(Number(x.totalUsd)))return Number(x.totalUsd);if(x.currency==="TON"&&Number.isFinite(Number(x.total)))return nftSellUsd(Number(x.total));if(Number.isFinite(Number(x.total)))return Number(x.total);return numericPrice(x.price)*Number(x.quantity||1)}
 function nftImageUrl(shortName){return NFT_BASE+"webp/by_name/"+encodeURIComponent(shortName)+".webp"}
 function modelFileName(modelName){return String(modelName||"").trim().toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_+|_+$/g,"")}
 function modelImageUrl(shortName,modelName){return MODEL_ASSET_BASE+encodeURIComponent(shortName)+"/"+encodeURIComponent(modelFileName(modelName))+".webp"}
