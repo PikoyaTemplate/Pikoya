@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#4a2c20">
+<title>Pikoya — Virtual Services Shop</title>
+<link rel="preload" as="image" href="file_00000000d7748210b66c82b92714eed8.png"><link rel="stylesheet" href="style.css?v=20261004-23">
+</head>
+<body>
+<header class="site-header">
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  <a class="brand" href="#home" data-route="home">Pikoya</a>
+  <nav class="top-nav">
+    <a href="#home" data-route="home">Home</a>
+    <a href="#search" data-route="search">Search</a>
+    <a href="#cart" data-route="cart">Cart <span id="cart-count" class="count">0</span></a>
+  </nav>
+</header>
+<aside class="drawer" id="drawer">
+  <button class="drawer-close" id="drawerClose">×</button>
+  <div class="drawer-brand">Pikoya</div>
+  <a href="#account" data-route="account">My Account</a>
+  <a href="#settings" data-route="settings">Settings</a>
+  <a href="#favorites" data-route="favorites">Favorites</a>
+  <a href="#support" data-route="support">Support</a>
+  <a href="#guide" data-route="guide">Help / Guide</a>
+  <a href="#orders" data-route="orders">My Orders</a>
+  <a href="#admin" data-route="admin">Admin Demo</a>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<main id="app"></main>
+<section class="site-faq" aria-label="FAQ">
+  <div class="site-faq-inner">
+    <h2>Frequently Asked Questions</h2>
+    <div class="site-faq-list">
+      <details><summary>How do I place an order?</summary><p>Choose a service, select a plan or amount, enter your username, and add the product to your cart.</p></details>
+      <details><summary>What happens after I place an order?</summary><p>Your order receives an order number and status, and you can track it from My Orders.</p></details>
+      <details><summary>How can I contact support?</summary><p>Use the Support section or contact us through the official Pikoya channel.</p></details>
+      <details><summary>Where is the official Pikoya channel?</summary><p><a href="https://t.me/pikoyashop" target="_blank" rel="noopener">@pikoyashop</a></p></details>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-brand">
+    <strong>Pikoya</strong>
+  </div>
+  <div class="footer-actions">
+    <a href="https://t.me/pikoyashop" target="_blank" rel="noopener">Support</a>
+    <a href="https://t.me/pikoyashop" target="_blank" rel="noopener">Orders</a>
+    <a class="footer-shop-link" href="https://t.me/pikoyashop" target="_blank" rel="noopener">@pikoyashop</a>
+  </div>
+  <div class="footer-note">Simple services, easy ordering.</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+<script src="app.js?v=20261005-01"></script>
+</body>
+</html>
