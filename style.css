@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+:root{--gold:#c89432;--gold2:#e5b85a;--cream:#f2e4c8;--paper:#fbf3df;--brown:#4a2c20;--brown2:#76533d;--burg:#793238;--ink:#302016;--line:#d3b887}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#4a2c20;color:var(--ink);font-family:"DM Sans",sans-serif}
+a{text-decoration:none;color:inherit}.site-header{height:82px;padding:0 clamp(20px,5vw,70px);display:flex;align-items:center;gap:28px;border-bottom:1px solid #6b4936;background:#f7ecd7;position:sticky;top:0;z-index:20}
+.brand{font:700 42px/1 "Cormorant Garamond",serif;color:var(--brown);letter-spacing:-.03em}.top-nav{display:flex;gap:26px;align-items:center;margin-left:auto;font:500 15px "Cormorant Garamond",serif;letter-spacing:.05em}.top-nav a{position:relative}.top-nav a:hover{color:var(--burg)}.count{display:inline-flex;min-width:19px;height:19px;align-items:center;justify-content:center;border-radius:50%;background:var(--brown);color:#fff;font:11px "DM Sans";margin-left:3px}.menu-btn{border:0;background:none;font-size:25px;color:var(--brown);cursor:pointer;padding:3px 0 3px 8px}.drawer{position:fixed;z-index:40;left:-340px;top:0;height:100%;width:min(340px,88vw);padding:34px 30px;background:var(--paper);box-shadow:15px 0 40px #3c21152b;transition:.3s}.drawer.open{left:0}.drawer a{display:block;padding:16px 0;border-bottom:1px solid var(--line)}.drawer-brand{font:700 38px/1 "Cormorant Garamond",serif;color:var(--brown);margin-bottom:35px}.drawer-close{border:0;background:none;font-size:32px;float:right;color:var(--brown)}.backdrop{position:fixed;inset:0;background:#24150b66;z-index:30;display:none}.backdrop.open{display:block}
+main{min-height:calc(100vh - 150px)}.wrap{width:min(1180px,90%);margin:auto}
+.hero{padding:28px 0 20px}.hero-card{position:relative;width:100%;min-height:0;aspect-ratio:2.15/1;background-image:url("file_00000000d7748210b66c82b92714eed8.png");background-size:cover;background-position:center;border:0;box-shadow:0 16px 35px #2b170f55;overflow:hidden;clip-path:polygon(0 1%,2% 0,8% 1%,15% 0,23% 1%,32% 0,42% 1%,51% 0,61% 1%,72% 0,82% 1%,91% 0,100% 1%,99% 97%,92% 99%,84% 98%,75% 100%,66% 98%,56% 100%,47% 98%,38% 100%,28% 98%,18% 100%,9% 98%,1% 100%)}.hero-card:before,.hero-card .stamp{display:none}
+.section-title{font:600 clamp(38px,5vw,54px) "Cormorant Garamond",serif;color:var(--paper);margin:38px 0 18px;text-align:center}.section-title:after{content:"✦";display:block;color:var(--gold2);font:18px "Cormorant Garamond";margin-top:4px}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 30px;padding-bottom:65px}.service{position:relative;background:#f8ecd4;border:0;padding:0;min-height:0;overflow:hidden;box-shadow:0 7px 20px #24140e44;transform:none}.service:hover{transform:translateY(-3px);box-shadow:0 12px 28px #24140e55}.service-banner{display:block;width:100%;height:auto;aspect-ratio:auto;background:#e9d7b6;position:relative}.service-link{display:block;line-height:0}.service-info{padding:16px 20px 20px;display:flex;align-items:flex-end;justify-content:space-between;gap:15px}.service h3{font:600 31px/1 "Cormorant Garamond",serif;margin:0 0 5px;color:var(--brown)}.service p{margin:0;font-size:12px;line-height:1.5;color:var(--brown2)}.service>.btn{margin:0 20px 20px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:7px;border:1px solid var(--brown);background:var(--brown);color:#fff;padding:11px 17px;font-size:12px;cursor:pointer}.btn.alt{background:transparent;color:var(--brown)}.btn.gold{background:var(--gold);border-color:var(--brown);color:var(--brown)}
+.service-premium .service-banner{background-image:url("premium.png")}.service-stars .service-banner{background-image:url("stars-banner.png")}.service-boost .service-banner{background-image:url("boost.png")}.service-nft .service-banner{background-image:url("file_000000008618821089451802e626503f.png")}
+.page{padding:55px 0}.page h1{font:600 58px "Cormorant Garamond";margin:0 0 12px;color:var(--paper)}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);font-weight:600}.sub{color:#ead8bb;line-height:1.7}.product-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:35px;margin-top:35px}.purchase-box{max-width:760px;margin:35px auto}.purchase-title{font:600 42px "Cormorant Garamond",serif;color:var(--brown);margin:0 0 6px}.product-art{min-height:420px;background-size:cover;background-position:center;position:relative;overflow:hidden;box-shadow:0 10px 25px #24140e55}.product-art span{position:absolute;left:18px;bottom:18px;background:#4b2d1fdd;padding:6px 14px;border:1px solid #fff3ce;color:#fff3ce;font:600 18px "Cormorant Garamond"}.product-art-premium{background-image:url("premium.png")}.product-art-stars{background-image:url("stars-banner.png")}.product-art-boost{background-image:url("boost.png")}.product-art-nft{background-image:url("file_000000008618821089451802e626503f.png")}
+.product-box{background:var(--paper);padding:28px;border:1px solid var(--line)}label{display:block;font-size:12px;margin:16px 0 7px;color:var(--brown2)}input,select,textarea{width:100%;padding:13px 12px;border:1px solid var(--line);background:#fffdf5;font:inherit;color:var(--ink)}.plans{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.plan{border:1px solid var(--line);background:#fffaf0;padding:13px;cursor:pointer}.plan.selected{border:2px solid var(--brown);background:#f1d58f}.price{font-weight:600;color:var(--burg)}
+.table{width:100%;border-collapse:collapse;background:var(--paper);margin-top:25px}.table th,.table td{text-align:left;padding:14px;border-bottom:1px solid var(--line);font-size:13px}.status{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--burg)}.notice{padding:14px 16px;background:#ead39b;border-left:4px solid var(--burg);font-size:13px;line-height:1.6;margin:18px 0}.empty{text-align:center;padding:60px 20px;background:var(--paper);border:1px dashed var(--line)}.faq{border-top:1px solid var(--line)}details{padding:17px 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:600;color:var(--brown)}.home-info{max-width:850px;margin:10px auto 70px;background:var(--paper);padding:30px;border:1px solid var(--line)}.home-info h2{font:600 38px "Cormorant Garamond",serif;color:var(--brown);margin:0 0 10px}.home-info p{color:var(--brown2);line-height:1.6;font-size:13px}.channel-btn{margin-top:24px}.footer-links a{text-decoration:underline;text-underline-offset:3px}\n.site-faq{width:100%;background:#4a2c20;color:#f2e4c8;padding:70px 5vw 68px;border-top:1px solid #6b4936}
+.site-faq-inner{width:min(900px,100%);margin:0 auto;direction:rtl;text-align:right}
+.site-faq h2{font:600 clamp(34px,4vw,50px) "Cormorant Garamond",serif;text-align:center;margin:0 0 34px;color:#f2e4c8}
+.site-faq-list{border-top:1px solid #bda47a}
+.site-faq-list details{border:1px solid #d3b887;padding:0;background:#f2e4c8;margin:10px 0}
+.site-faq-list summary{list-style:none;cursor:pointer;padding:20px 18px;font:600 18px "Cormorant Garamond",serif;color:#4a2c20;position:relative;padding-left:48px}
+.site-faq-list summary::-webkit-details-marker{display:none}
+.site-faq-list summary:before{content:"+";position:absolute;left:8px;top:16px;font:24px "DM Sans",sans-serif;font-weight:400}
+.site-faq-list details[open] summary:before{content:"−"}
+.site-faq-list p{margin:0;padding:0 18px 22px;color:#76533d;font:13px/2 "DM Sans",sans-serif}
+.site-faq a{color:#793238;text-decoration:underline}
+footer{width:100%;margin:0;position:relative;z-index:5;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:30px;padding:34px 5vw;background:#3f261b;color:#f2e4c8;font-family:"Cormorant Garamond",serif;direction:ltr}.footer-brand{grid-column:1;text-align:left}.footer-actions{grid-column:2}.footer-note{grid-column:3}
+.footer-brand{min-width:0;text-align:center}.footer-brand strong{display:block;font-size:38px;line-height:1;margin-bottom:12px}.footer-links{font:13px/1.8 "DM Sans",sans-serif;color:#e5b85a}.footer-links a{color:#e5b85a;text-decoration:none}.footer-actions{display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center;font:16px/1.2 "Cormorant Garamond",serif;margin:0 auto}.footer-actions a{color:#f2e4c8;text-decoration:none}.footer-actions a:hover{color:#e5b85a}.footer-shop-link{color:#e5b85a!important;text-decoration:underline!important;text-underline-offset:4px;margin-top:5px}.footer-note{font-size:17px;direction:rtl;text-align:right;color:#e5b85a}
+@media(max-width:800px){.hero{padding-top:20px}.services{grid-template-columns:1fr}.product-layout{grid-template-columns:1fr}.service-info{align-items:flex-start}.top-nav{gap:14px}.hero-card{aspect-ratio:1.55/1}.page h1{font-size:48px}.service-info{display:block}.service-info .btn{margin-top:12px}}
+/* Responsive hero: keep the full Pikoya artwork visible on narrow screens */
+.hero{width:100%;overflow:hidden}
+.hero-card{width:100%;background-size:contain;background-repeat:no-repeat;background-position:center center;aspect-ratio:16/7}
+@media(max-width:700px){
+  .hero-card{aspect-ratio:16/8.5;background-size:contain;background-position:center center}
+}
+@media(max-width:520px){
+  .hero-card{aspect-ratio:16/9;background-size:contain;background-position:center center}
+}
+@media(max-width:520px){.top-nav a:nth-child(2){display:none}.site-header{padding:0 20px;height:72px}.brand{font-size:35px}.hero-card{aspect-ratio:1.15/1}footer{display:block;width:100%;padding:30px 20px;line-height:2}.footer-brand{text-align:center}.footer-actions{margin:18px 0;align-items:center}.footer-note{text-align:center;margin-top:12px}.footer-faq{margin-top:22px}.footer-faq-list{grid-template-columns:1fr}.service-info{display:block}.service-info .btn{margin-top:12px}}
+/* NFT gift catalog */
+.nft-shop{margin-top:28px}.nft-intro{max-width:760px;margin:0 auto 24px;text-align:center;color:var(--paper)}.nft-intro h2{font:600 44px "Cormorant Garamond",serif;margin:0 0 6px;color:var(--paper)}.nft-intro p{margin:0;color:#e8d5b8;font-size:13px}.nft-filters{margin:0 auto 24px;max-width:1000px}.nft-filter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.nft-search label,.nft-filter-grid label{margin-top:0}.nft-results{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:1000px;margin:0 auto 30px}.nft-card{padding:0;text-align:left;border:1px solid var(--line);background:var(--paper);cursor:pointer;box-shadow:0 7px 18px #24140e33;overflow:hidden}.nft-card:hover,.nft-card.selected{border-color:var(--brown);box-shadow:0 10px 24px #24140e55}.nft-art{height:150px;display:flex;align-items:flex-end;padding:12px;background:#d8b96f;position:relative}.nft-art:after{content:"";position:absolute;inset:22px 25%;border:1px solid #fff6d5aa;transform:rotate(-5deg)}.nft-art[data-bg="Ruby"]{background:#793238}.nft-art[data-bg="Midnight"]{background:#3d4059}.nft-art[data-bg="Honey"]{background:#c89432}.nft-art[data-bg="Burgundy"]{background:#642b31}.nft-art[data-bg="Cream"]{background:#e8dcc0}.nft-art[data-bg="Peach"]{background:#d99472}.nft-art[data-bg="Azure"]{background:#668da8}.nft-art span{position:relative;z-index:1;background:#4a2c20dd;color:#fff3ce;padding:5px 9px;font-size:11px}.nft-card-body{padding:14px 16px 8px;display:flex;justify-content:space-between;gap:15px;align-items:flex-start}.nft-card-body strong{display:block;font:600 24px/1 "Cormorant Garamond",serif;color:var(--brown)}.nft-card-body small{display:block;margin-top:5px;color:var(--brown2);font-size:11px}.nft-price{font-size:12px;font-weight:600;color:var(--burg);white-space:nowrap}.nft-meta{display:flex;justify-content:space-between;padding:7px 16px 14px;color:var(--brown2);font-size:10px}.nft-calculator{max-width:1000px;margin:0 auto 45px}.nft-calc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;border-bottom:1px solid var(--line);padding-bottom:15px}.nft-calc-head h2{font:600 38px "Cormorant Garamond",serif;color:var(--brown);margin:0}.nft-calc-head>span{font-size:12px;color:var(--brown2)}.nft-calc-grid{display:grid;grid-template-columns:1fr 220px;gap:18px}.nft-selected-details{min-height:48px;padding:13px;background:#fffdf5;border:1px solid var(--line);font-size:12px;line-height:1.8}.nft-total{display:flex;justify-content:space-between;align-items:center;margin:20px 0;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--brown)}.nft-total strong{font:600 28px "Cormorant Garamond",serif;color:var(--burg)}
+@media(max-width:700px){.nft-filter-grid,.nft-results,.nft-calc-grid{grid-template-columns:1fr}.nft-card-body{display:block}.nft-price{margin-top:8px}.nft-calc-head{display:block}.nft-calc-head>span{display:block;margin-top:7px}.nft-art{height:130px}}
+
+/* NFT market-style list */
+.nft-filter-grid{grid-template-columns:repeat(3,1fr)}.nft-results{display:block;max-width:1000px;margin:0 auto 30px}.nft-card{display:block;width:100%;padding:0;text-align:left;border:0;border-bottom:1px solid var(--line);background:var(--paper);cursor:pointer;box-shadow:none;overflow:hidden}.nft-card:hover,.nft-card.selected{border-color:var(--line);box-shadow:none;background:#f4e7cb}.nft-row{display:grid;grid-template-columns:1.2fr 1.5fr auto;gap:20px;align-items:center;padding:17px 18px}.nft-row strong{display:block;font:600 22px/1 "Cormorant Garamond",serif;color:var(--brown)}.nft-row small{display:block;margin-top:5px;color:var(--brown2);font-size:11px}.nft-row>div:nth-child(2){display:flex;gap:8px;flex-wrap:wrap}.nft-row>div:nth-child(2) span{padding:5px 9px;border:1px solid var(--line);font-size:10px;color:var(--brown2);background:#fffaf0}.nft-row>b{font-size:12px;color:var(--burg);white-space:nowrap}.nft-meta{display:flex;justify-content:space-between;padding:0 18px 13px;color:var(--brown2);font-size:10px}.nft-art,.nft-card-body{display:none}.nft-filters select{appearance:auto}.nft-filter-grid>div{min-width:0}@media(max-width:700px){.nft-filter-grid{grid-template-columns:1fr}.nft-row{grid-template-columns:1fr;gap:8px}.nft-row>b{font-size:13px}.nft-meta{padding-bottom:14px}}
+
+/* NFT clickable gift preview */
+.nft-gift-name{cursor:pointer;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px;transition:.15s}.nft-gift-name:hover{text-decoration-color:var(--gold);color:var(--burg)}
+.nft-preview-modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:24px}.nft-preview-backdrop{position:absolute;inset:0;background:#24150bcc}.nft-preview-box{position:relative;z-index:1;width:min(430px,92vw);background:var(--paper);border:1px solid var(--line);box-shadow:0 22px 60px #24140e88;padding:18px}.nft-preview-close{position:absolute;right:10px;top:8px;z-index:2;width:34px;height:34px;border:1px solid var(--line);background:var(--paper);color:var(--brown);font-size:25px;line-height:1;cursor:pointer}.nft-preview-image-wrap{position:relative;min-height:280px;display:flex;align-items:center;justify-content:center;background:#ead7ad;overflow:hidden}.nft-preview-image-wrap img{display:block;width:100%;height:auto;max-height:430px;object-fit:contain}.nft-preview-fallback{display:none;color:var(--brown2);font:18px "Cormorant Garamond",serif}.nft-preview-image-wrap.is-fallback img{display:none}.nft-preview-image-wrap.is-fallback .nft-preview-fallback{display:block}.nft-preview-copy{padding:15px 3px 4px}.nft-preview-copy h3{margin:0;color:var(--brown);font:600 29px/1 "Cormorant Garamond",serif}.nft-preview-copy p{margin:7px 0 0;color:var(--brown2);font-size:12px}@media(max-width:520px){.nft-preview-box{padding:12px}.nft-preview-image-wrap{min-height:230px}}
+
+/* NFT marketplace rebuild */
+.nft-market{margin-top:28px}.nft-market-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:24px}.nft-market-head h2{font:600 52px/1 "Cormorant Garamond",serif;color:var(--paper);margin:5px 0}.nft-market-head p{margin:0;color:#e8d5b8;font-size:13px}.nft-market-count{color:var(--gold2);font-size:12px;white-space:nowrap}.nft-toolbar{max-width:none;margin-bottom:18px}.nft-search-wide{margin-bottom:6px}.nft-filter-grid{grid-template-columns:repeat(3,1fr);gap:12px}.nft-status{margin:10px 0 18px;color:#e8d5b8}.nft-market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:34px}.nft-market-card{display:block;width:100%;padding:0;text-align:left;border:1px solid var(--line);background:var(--paper);cursor:pointer;box-shadow:0 8px 22px #24140e33;overflow:hidden;transition:.16s}.nft-market-card:hover{transform:translateY(-3px);border-color:var(--brown);box-shadow:0 12px 28px #24140e55}.nft-card-image{height:220px;position:relative;display:flex;align-items:center;justify-content:center;background:#ead7ad;overflow:hidden}.nft-card-image img{display:block;width:100%;height:100%;object-fit:contain;padding:18px}.nft-card-badge{position:absolute;left:12px;top:12px;padding:5px 8px;background:#4a2c20e8;color:#fff3ce;font-size:9px;letter-spacing:.08em;text-transform:uppercase}.nft-card-info{display:flex;justify-content:space-between;gap:12px;padding:14px 15px 7px;align-items:flex-start}.nft-card-info strong{display:block;font:600 24px/1.05 "Cormorant Garamond",serif;color:var(--brown)}.nft-card-info small{display:block;margin-top:5px;color:var(--brown2);font-size:10px}.nft-card-info b{color:var(--burg);font-size:11px;white-space:nowrap}.nft-card-foot{display:flex;justify-content:space-between;padding:8px 15px 14px;color:var(--brown2);font-size:10px}.nft-buy-panel{max-width:none;margin:0 0 45px}.nft-buy-head{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:15px}.nft-buy-head h2{font:600 38px "Cormorant Garamond",serif;color:var(--brown);margin:0}.nft-buy-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px}.nft-buy-preview{background:#fffaf0;border:1px solid var(--line);padding:18px}.nft-buy-preview img{display:block;width:100%;height:260px;object-fit:contain;background:#ead7ad;margin-bottom:15px}.nft-buy-preview>div{padding:12px;background:#fffdf5;border:1px solid var(--line);font-size:12px;line-height:1.9}.nft-buy-form{padding:0 4px}.nft-buy-form .nft-total{margin-top:18px}.nft-market .nft-filter-grid>div{min-width:0}
+@media(max-width:900px){.nft-market-grid{grid-template-columns:repeat(2,1fr)}.nft-filter-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.nft-market-head{display:block}.nft-market-head h2{font-size:45px}.nft-market-count{margin-top:8px}.nft-market-grid,.nft-filter-grid,.nft-buy-layout{grid-template-columns:1fr}.nft-card-image{height:240px}.nft-buy-head{display:block}.nft-buy-head .btn{margin-top:12px}}
+
+/* NFT marketplace clarity */
+.nft-market-head{margin-bottom:18px}.nft-market-head p{max-width:560px}.nft-filter-main{grid-template-columns:2fr 1fr;max-width:520px}.nft-toolbar{padding:16px 18px}.nft-status{margin:8px 0 14px}.nft-market-grid{gap:12px}.nft-card-image{height:205px;background:#d8b477;isolation:isolate}.nft-card-image:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,#f5dfad 0,#d8b477 62%,#b98548 100%);z-index:-2}.nft-card-image img{position:relative;z-index:1;width:88%;height:88%;padding:10px;object-fit:contain;filter:drop-shadow(0 10px 12px #24140e55)}.nft-card-backdrop{position:absolute;inset:14px;border:1px solid #fff3cf66;z-index:0;pointer-events:none}.nft-card-info{padding:11px 13px 5px}.nft-card-info strong{font-size:22px}.nft-card-foot{padding:7px 13px 12px}.nft-buy-panel{margin-top:8px}
+@media(max-width:620px){.nft-filter-main{grid-template-columns:1fr}.nft-card-image{height:225px}}
+
+
+/* NFT model browser */
+.nft-models-panel{margin:8px 0 35px}
+.nft-models-head{display:flex;justify-content:space-between;align-items:end;gap:20px;border-bottom:1px solid var(--line);padding:0 0 15px;margin-bottom:15px}
+.nft-models-head h3{margin:4px 0;font:600 38px/1 "Cormorant Garamond",serif;color:var(--paper)}
+.nft-models-head p{margin:5px 0 0;color:#e8d5b8;font-size:12px}
+.nft-rate{color:var(--gold2);font-size:11px;white-space:nowrap}
+.nft-model-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.nft-model-card{display:block;padding:0;text-align:left;border:1px solid var(--line);background:var(--paper);cursor:pointer;overflow:hidden;transition:.16s;box-shadow:0 7px 18px #24140e22}
+.nft-model-card:hover{transform:translateY(-2px);border-color:var(--brown);box-shadow:0 10px 22px #24140e44}
+.nft-animated-art{width:88%;height:88%;display:flex;align-items:center;justify-content:center}
+.nft-animated-art svg{width:100%;height:100%;display:block}
+.nft-animated-art img{width:100%!important;height:100%!important;object-fit:contain}
+.nft-model-art{height:180px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.nft-model-art img{width:88%;height:88%;object-fit:contain;filter:drop-shadow(0 8px 9px #24140e44)}
+.nft-model-art span{position:absolute;left:9px;bottom:8px;padding:4px 6px;background:#24140ecc;color:#fff3cf;font-size:8px}
+.nft-model-copy{padding:10px 11px 12px}
+.nft-model-copy strong{display:block;color:var(--brown);font:600 20px/1.05 "Cormorant Garamond",serif}
+.nft-model-copy b{display:block;color:var(--burg);font-size:12px;margin-top:7px}
+.nft-model-copy small{display:block;color:var(--brown2);font-size:9px;margin-top:3px}
+.nft-selected-art{padding:0!important;border:0!important;background:none!important}
+.nft-selected-stage{height:260px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.nft-selected-stage img{width:88%;height:88%;object-fit:contain;filter:drop-shadow(0 10px 12px #24140e55)}
+.nft-backdrop-note{margin-top:10px;padding:8px 10px;background:#fffdf5;border:1px solid var(--line);font-size:10px;color:var(--brown2)}
+@media(max-width:1000px){.nft-model-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.nft-model-grid{grid-template-columns:repeat(2,1fr)}.nft-models-head{display:block}.nft-rate{margin-top:8px}}
+@media(max-width:480px){.nft-model-grid{grid-template-columns:1fr}.nft-model-art{height:230px}}
+
+
+.nft-pagination{display:flex;justify-content:center;align-items:center;gap:14px;margin:-12px 0 34px;color:#e8d5b8;font-size:11px}
+.nft-pagination button:disabled{opacity:.45;cursor:not-allowed}
+
+.nft-card-image:before{display:none!important}
+.nft-load-more{display:block;width:min(100%,420px);margin:4px auto 24px;text-align:center}
+
+/* NFT compact gift list */
+.nft-market-grid{display:block;margin-bottom:34px;background:var(--paper);border:1px solid var(--line)}
+.nft-market-card{display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:15px;width:100%;min-height:78px;padding:10px 14px;text-align:left;border:0;border-bottom:1px solid var(--line);background:var(--paper);cursor:pointer;box-shadow:none;transition:.14s}
+.nft-market-card:last-child{border-bottom:0}
+.nft-market-card:hover{background:#f4e7cb;transform:none;box-shadow:none}
+.nft-gift-thumb{width:58px;height:58px;display:flex;align-items:center;justify-content:center;background:#ead7ad;border:1px solid var(--line);overflow:hidden}
+.nft-gift-thumb img{width:100%;height:100%;object-fit:contain;padding:4px;filter:drop-shadow(0 4px 5px #24140e33)}
+.nft-gift-main{min-width:0}
+.nft-gift-main strong{display:block;font:600 23px/1.05 "Cormorant Garamond",serif;color:var(--brown)}
+.nft-gift-main small{display:block;margin-top:5px;color:var(--brown2);font-size:10px}
+.nft-gift-action{text-align:right;white-space:nowrap}
+.nft-gift-action b{display:block;color:var(--burg);font-size:11px}
+.nft-gift-action span{display:block;margin-top:5px;color:var(--brown2);font-size:9px}
+@media(max-width:620px){
+ .nft-market-card{grid-template-columns:50px 1fr auto;gap:10px;min-height:68px;padding:9px 10px}
+ .nft-gift-thumb{width:50px;height:50px}
+ .nft-gift-main strong{font-size:20px}
+ .nft-gift-main small{font-size:9px}
+ .nft-gift-action span{display:none}
+}
+
+/* NFT collection accordion + separate detail page */
+.nft-collection-shell{margin-top:12px;border:1px solid var(--line);background:var(--paper);box-shadow:0 8px 22px #24140e22}
+.nft-collection-title{display:flex;justify-content:space-between;align-items:center;padding:15px 18px;border-bottom:1px solid var(--line);color:var(--brown)}
+.nft-collection-title strong{font:600 25px/1 "Cormorant Garamond",serif}
+.nft-collection-title span{font:10px "DM Sans",sans-serif;color:var(--brown2)}
+.nft-market-grid{display:block!important;margin:0!important;background:transparent!important;border:0!important}
+.nft-market-card{display:grid!important;grid-template-columns:52px 1fr 22px!important;align-items:center!important;gap:14px!important;width:100%!important;min-height:72px!important;padding:9px 16px!important;text-align:left!important;border:0!important;border-bottom:1px solid var(--line)!important;background:var(--paper)!important;box-shadow:none!important;transform:none!important}
+.nft-market-card:last-child{border-bottom:0!important}
+.nft-market-card:hover{background:#f5e9d0!important}
+.nft-gift-thumb{width:52px!important;height:52px!important;border:0!important;background:transparent!important}
+.nft-gift-thumb img{padding:0!important}
+.nft-gift-main strong{font:600 22px/1.05 "Cormorant Garamond",serif!important;color:var(--brown)!important}
+.nft-gift-main small{margin-top:4px!important;font-size:9px!important;color:var(--brown2)!important}
+.nft-gift-action{text-align:center!important}
+.nft-gift-action span{display:block!important;font:24px/1 "Cormorant Garamond",serif!important;color:var(--burg)!important}
+.nft-detail-page{margin-top:20px}
+.nft-detail-top{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;margin-bottom:20px}
+.nft-detail-top h2{margin:4px 0;font:600 46px/1 "Cormorant Garamond",serif;color:var(--paper)}
+.nft-detail-top p{margin:5px 0;color:#e8d5b8;font-size:12px}
+.nft-detail-top>.btn{white-space:nowrap}
+.nft-detail-page .nft-models-panel{margin-top:8px}
+.nft-detail-page .nft-models-head{margin-bottom:18px}
+.nft-backdrop-label{margin-top:16px;margin-bottom:9px;color:var(--brown);font:600 18px "Cormorant Garamond",serif}
+.nft-backdrop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.nft-backdrop-choice{display:grid;grid-template-columns:28px 1fr;grid-template-rows:auto auto;column-gap:8px;align-items:center;padding:8px;border:1px solid var(--line);background:#fffdf5;text-align:left;cursor:pointer;color:var(--brown)}
+.nft-backdrop-choice:hover,.nft-backdrop-choice.selected{border-color:var(--brown);background:#f4e7cb}
+.nft-backdrop-choice i{grid-row:1/3;width:28px;height:28px;border:1px solid #fff;box-shadow:0 0 0 1px var(--line);border-radius:50%}
+.nft-backdrop-choice span{font:600 13px/1.1 "Cormorant Garamond",serif}
+.nft-backdrop-choice small{font-size:8px;color:var(--brown2);margin-top:2px}
+.nft-backdrop-empty{font-size:11px;color:var(--brown2)}
+@media(max-width:620px){
+ .nft-collection-title{padding:13px 12px}
+ .nft-collection-title strong{font-size:23px}
+ .nft-collection-title span{font-size:9px}
+ .nft-market-card{grid-template-columns:48px 1fr 18px!important;gap:11px!important;padding:8px 10px!important}
+ .nft-gift-thumb{width:48px!important;height:48px!important}
+ .nft-gift-main strong{font-size:20px!important}
+ .nft-detail-top{grid-template-columns:1fr;gap:10px}
+ .nft-detail-top h2{font-size:40px}
+ .nft-backdrop-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+.nft-collection-dropdown{margin-top:12px;border:1px solid var(--line);background:var(--paper);box-shadow:0 8px 22px #24140e22}
+.nft-collection-dropdown>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:15px 18px;color:var(--brown);font:600 25px/1 "Cormorant Garamond",serif}
+.nft-collection-dropdown>summary::-webkit-details-marker{display:none}
+.nft-collection-dropdown>summary:after{content:"+";font:28px/1 "DM Sans",sans-serif;font-weight:300}
+.nft-collection-dropdown[open]>summary:after{content:"−"}
+.nft-collection-dropdown>summary span{margin-left:auto;margin-right:14px;font:10px "DM Sans",sans-serif;color:var(--brown2)}
+.nft-collection-dropdown .nft-collection-shell{margin:0;border:0;box-shadow:none}
+@media(max-width:620px){.nft-collection-dropdown>summary{padding:13px 12px;font-size:23px}.nft-collection-dropdown>summary span{font-size:9px}}
+
+.cart-row,.admin-order{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}.cart-total{display:flex;justify-content:space-between;padding:20px 0;font-size:1.08rem}.cart-actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}.admin-list select{min-width:145px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}@media(max-width:600px){.cart-row,.admin-order{align-items:flex-start;flex-direction:column}.cart-row .btn,.admin-order select{width:100%}.cart-actions .btn{width:100%}}
