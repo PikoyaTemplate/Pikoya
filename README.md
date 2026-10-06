@@ -1,39 +1,82 @@
 # Pikoya — Digital Services Marketplace Template
 
-Pikoya is a polished, responsive storefront template for digital-service businesses. It is designed around a warm vintage/editorial visual style and includes a complete front-end shopping experience.
+A polished, responsive static storefront template for digital-service businesses, online shops, and service marketplaces.
 
-## Features
+## Live Demo
 
-- Responsive storefront
-- Premium, Stars, Boost and NFT service pages
-- Product plans and custom quantities
-- Username/order form flows
-- Shopping cart with quantities, removal and totals
-- Demo checkout and order-status UI
+https://pikoyatemplate.github.io/Pikoya/
+
+## What's Included
+
+- Responsive vintage/editorial storefront
+- Homepage hero section and service cards
+- Premium, Stars, Boost and NFT service flows
+- Plan selection and custom quantities
+- Username / ID and order-note fields
+- Shopping cart with totals and item removal
+- Demo checkout and order-status flow
 - My Account, My Orders, Favorites, Settings, Support and Help pages
-- FAQ section
-- NFT marketplace/catalog demo
+- Demo admin order-management UI
+- FAQ sections
+- NFT catalog interface
 - GitHub Pages-ready static deployment
-- No build step required
+- No build tool or framework required
 
-## Important
+## Files
 
-This is a front-end template/demo. Real authentication, SMS verification, payments, database storage, supplier/API fulfillment and secure admin authentication require a backend or third-party services.
+- `index.html` — main page shell and global navigation
+- `style.css` — visual styling and responsive layout
+- `app.js` — storefront routing, cart, orders and service interactions
+- `script.js` — supporting client-side behavior
+- `nft-catalog.json` — demo NFT catalog data
+- `*.png` — storefront/service artwork
 
-The demo contains placeholder/example service data and should be configured by the buyer before production use.
+## Installation
 
-## Third-party assets and data
+1. Extract the ZIP.
+2. Open `index.html` in a browser for a local preview.
+3. For production hosting, upload the files to any static web host.
 
-Some demo assets/data may originate from third-party projects or services. Review the applicable licenses and terms before commercial redistribution or production use. Replace any asset that you do not have the right to redistribute.
-
-## Deployment
-
-The project is static and can be deployed to GitHub Pages, Netlify, Vercel, Cloudflare Pages, or standard web hosting.
+No npm install, build command, or server is required for the demo.
 
 ## Customization
 
-Edit the HTML, CSS and JavaScript files directly. Main visual variables are defined in `style.css`.
+Edit the service data and prices in `app.js`, visual styles in `style.css`, and page/global copy in `index.html`.
+
+Replace the demo contact links and service data with your own business information before publishing.
+
+## Production Notes
+
+This package is a front-end template/demo. The following features require a backend or third-party service:
+
+- Real user accounts and secure authentication
+- SMS verification
+- Persistent multi-user orders
+- Real payments and checkout
+- Supplier/API fulfillment
+- Secure administrator authentication
+- Server-side order management
+
+The demo stores cart/order/favorite state in the browser using local storage.
+
+## Third-Party Dependencies & Assets
+
+The demo may reference external libraries and third-party NFT data/assets used for demonstration. Review the applicable licenses and terms before redistributing those assets or using them in a commercial production deployment.
+
+If your marketplace requires all product assets to be owned or redistributable by the seller, replace or remove third-party NFT data/assets before submission.
+
+External libraries currently used by the demo include Pako and Lottie Web.
+
+## Browser Support
+
+Designed for modern desktop and mobile browsers with JavaScript enabled.
 
 ## License
 
-The seller's license terms apply to the purchased package. The buyer may modify and deploy the project for their own commercial use. Redistribution or resale of the original source as a standalone template is not included unless separately agreed in writing.
+The buyer receives a non-exclusive license to modify and use the template for their own commercial projects, subject to the license terms of the marketplace where the item is purchased and any applicable third-party licenses.
+
+Redistribution, resale, sublicensing, or repackaging of the original source as a competing template is not included.
+
+## Credits
+
+Pikoya is an independent template/demo project. Third-party libraries and external assets remain the property of their respective owners.
